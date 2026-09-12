@@ -547,6 +547,27 @@
             align-items: center
         }
 
+        .back-button {
+            position: absolute;
+            top: 24px;
+            left: 32px;
+            z-index: 5;
+            border: 1px solid var(--line);
+            background: var(--surface);
+            color: var(--muted);
+            padding: 9px 13px;
+            font: 500 11px var(--sans);
+            cursor: pointer;
+            transition: transform .2s ease, color .2s ease, border-color .2s ease, box-shadow .2s ease
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            color: var(--accent);
+            border-color: var(--accent);
+            box-shadow: 4px 4px 0 rgba(235, 133, 97, .18)
+        }
+
         .brand {
             display: flex;
             align-items: center;
