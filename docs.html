@@ -15,7 +15,7 @@
 
 <body>
     <header class="nav">
-        <button class="back-button" type="button" onclick="history.length > 1 ? history.back() : location.href='index.html'" aria-label="返回上一页">← 返回上一页</button>
+        <button class="back-button" type="button" onclick="goBack()" aria-label="返回上一页">← 返回上一页</button>
         <div class="wrap nav-in"><a class="brand" href="index.html"><span class="mark">QX</span><span>QxAPI /
                     Docs</span></a>
             <nav class="navlinks"><a href="index.html">返回首页</a><a href="mailto:hello@qxapi.com">联系我们</a></nav>
@@ -132,9 +132,9 @@ response = client.chat.completions.create(
         </div>
     </div>
     <footer class="footer">
-        <div class="wrap">© 2026 QxAPI · <a href="index.html">返回首页</a></div>
+        <div class="wrap"><span>© 2026 QxAPI</span><nav aria-label="页脚导航"><a href="index.html">返回首页</a><a href="terms.html">用户协议</a><a href="privacy.html">隐私政策</a></nav></div>
     </footer>
-    <script>document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => { const code = b.parentElement.nextElementSibling.innerText; navigator.clipboard?.writeText(code); b.textContent = '已复制'; setTimeout(() => b.textContent = '复制', 1600) })); const links = document.querySelectorAll('.side-list a'); links.forEach(a => a.addEventListener('click', () => { links.forEach(x => x.classList.remove('active')); a.classList.add('active') }));</script>
+    <script>function goBack(){const ref=document.referrer;try{if(ref&&new URL(ref).origin===window.location.origin){window.history.back();return}}catch(e){}window.location.assign('./index.html')}document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => { const code = b.parentElement.nextElementSibling.innerText; navigator.clipboard?.writeText(code); b.textContent = '已复制'; setTimeout(() => b.textContent = '复制', 1600) })); const links = document.querySelectorAll('.side-list a'); links.forEach(a => a.addEventListener('click', () => { links.forEach(x => x.classList.remove('active')); a.classList.add('active') }));</script>
 </body>
 
 </html>

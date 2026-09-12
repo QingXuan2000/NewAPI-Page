@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="了解 QxAPI 服务的使用规则、双方责任与服务边界。">
+    <meta name="color-scheme" content="dark">
+    <title>用户协议 — QxAPI</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="legal-page">
+    <a class="legal-skip" href="#main">跳到正文</a>
+    <div class="legal-top wrap"><a class="legal-back" href="index.html">← 返回首页</a></div>
+    <main id="main" class="legal-layout wrap">
+        <aside class="legal-toc">
+            <nav aria-label="页面目录">
+                <p class="legal-label">本页内容</p>
+                <ol><li><a href="#scope">适用范围与服务说明</a></li>
+                    <li><a href="#account">账户与密钥安全</a></li>
+                    <li><a href="#usage">合理使用与禁止行为</a></li>
+                    <li><a href="#content">输入、输出与知识产权</a></li>
+                    <li><a href="#ai">模型输出与人工审核</a></li>
+                    <li><a href="#billing">费用、用量与退款</a></li>
+                    <li><a href="#availability">服务变更与可用性</a></li>
+                    <li><a href="#suspension">暂停与终止</a></li>
+                    <li><a href="#liability">责任与争议处理</a></li>
+                    <li><a href="#updates">协议更新与联系</a></li></ol>
+            </nav>
+        </aside>
+        <article class="legal-content">
+            <header class="legal-heading">
+                <p class="legal-label">QxAPI / TERMS OF SERVICE</p>
+                <h1>用户协议</h1>
+                <p>了解 QxAPI 服务的使用规则、双方责任与服务边界。</p>
+            </header>
+            <section id="scope" aria-labelledby="scope-title">
+                <h2 id="scope-title"><span>01</span>适用范围与服务说明</h2>
+                <p>本协议适用于 QxAPI 网站、API 接入及相关服务。服务内容包括模型接口访问、请求转发，以及实际开放的账户与用量管理功能。具体可用模型、接口、价格和限制以服务页面及订单约定为准。</p><p>本页面用于说明服务规则。涉及账户开通、付费购买或协议接受的流程，以对应业务页面和双方实际约定为准。</p>
+            </section>
+            <section id="account" aria-labelledby="account-title">
+                <h2 id="account-title"><span>02</span>账户与密钥安全</h2>
+                <p>使用需要账户的服务时，请提供真实、准确且必要的信息，并及时更新。代表组织使用服务的，应取得该组织的相应授权。</p><ul><li>妥善保管登录凭据和 API Key，避免将密钥提交到公开仓库、前端代码或共享日志。</li><li>仅向经过授权的成员分配权限，并对自身控制范围内的访问采取合理管理措施。</li><li>发现密钥泄露或异常调用时，应及时停用或轮换密钥，并联系服务支持处理。</li></ul>
+            </section>
+            <section id="usage" aria-labelledby="usage-title">
+                <h2 id="usage-title"><span>03</span>合理使用与禁止行为</h2>
+                <p>使用服务应遵守适用法律法规，并尊重他人的隐私、知识产权与其他合法权益。不得利用服务实施下列行为：</p><ul><li>未经授权访问系统、窃取账户、传播恶意代码或干扰服务运行。</li><li>规避访问控制、计费、配额或速率限制，或通过异常流量影响其他用户。</li><li>违法收集、披露或使用个人信息，上传无权处理的保密资料。</li><li>生成或传播违法内容，实施欺诈、侵权及其他损害第三方权益的行为。</li></ul><p>使用第三方模型时，还应遵守与该模型相关、已向用户说明的供应商使用规则。</p>
+            </section>
+            <section id="content" aria-labelledby="content-title">
+                <h2 id="content-title"><span>04</span>输入、输出与知识产权</h2>
+                <p>你应确保对提交的提示词、文件及其他输入拥有合法使用和处理权限。为完成请求，相关内容可能需要由 QxAPI 及你选择的模型供应商处理，具体见隐私政策。</p><p>你对原有内容享有的权利不因使用服务而转移。生成内容的使用应结合适用法律、第三方权利及对应模型的条款判断；生成结果不保证具有独创性、排他性或可获得知识产权保护。</p><p>未经许可，不得擅自使用 QxAPI 的商标、标识或受保护的网站内容，但法律允许的使用除外。</p>
+            </section>
+            <section id="ai" aria-labelledby="ai-title">
+                <h2 id="ai-title"><span>05</span>模型输出与人工审核</h2>
+                <p>模型输出可能存在事实错误、遗漏、偏见或过时信息，也可能在相同输入下产生不同结果。请在公开发布或用于业务决策前进行必要验证。</p><p>医疗、法律、金融等专业场景需要具有相应资质的人员审核。对影响个人权益的决定，不应仅依赖未经核实的模型输出。</p><p>工具调用或自动化执行应由你的应用设置权限、参数校验与必要的人工审核，避免将未经验证的输出直接作为操作指令。</p>
+            </section>
+            <section id="billing" aria-labelledby="billing-title">
+                <h2 id="billing-title"><span>06</span>费用、用量与退款</h2>
+                <p>付费项目的计费单位、模型价格、余额规则、税费与其他条件，以购买或调用时明确展示的说明及双方约定为准。请在使用前核对模型及调用参数。</p><p>重试、流式请求中断和第三方已处理的请求可能产生用量，具体计费方式应以相应服务的公开规则为准。发现账单异常时，可提供请求编号和时间范围申请核查，不要发送完整密钥。</p><p>退款、余额处理和订单取消依照购买时告知的规则、双方约定及适用法律处理。本协议不排除依法享有的消费者权利。</p>
+            </section>
+            <section id="availability" aria-labelledby="availability-title">
+                <h2 id="availability-title"><span>07</span>服务变更与可用性</h2>
+                <p>服务可能因维护、网络故障、供应商调整或安全事件受到影响。可用性、响应速度和模型能力受实际部署及上游供应商影响；特定服务等级以双方明确约定为准。</p><p>对于可能影响接入的重大变更，将通过适当方式说明。建议应用设置超时、有限次数重试和故障处理，并保存自身所需的业务数据。</p>
+            </section>
+            <section id="suspension" aria-labelledby="suspension-title">
+                <h2 id="suspension-title"><span>08</span>暂停与终止</h2>
+                <p>如存在违法使用、严重违反服务规则、账户安全风险或欠费等情况，可根据风险采取限制调用、暂停访问等必要措施，并在可行且法律允许的情况下说明原因和处理方式。</p><p>你可以停止使用服务，并通过服务提供的渠道申请注销账户。终止后，已产生的费用、依法应履行的义务以及数据处理安排，依照相关约定与隐私政策处理。</p>
+            </section>
+            <section id="liability" aria-labelledby="liability-title">
+                <h2 id="liability-title"><span>09</span>责任与争议处理</h2>
+                <p>双方应对自身违反法律或约定的行为依法承担责任。涉及第三方服务、不可抗力或网络故障的责任，应结合实际原因、双方过错及适用法律确定。</p><p>任何免责或责任限制均不得排除法律规定不可排除的责任。发生争议时，建议先通过服务支持协商；协商不成的，依法向有管辖权的争议解决机构寻求救济。</p>
+            </section>
+            <section id="updates" aria-labelledby="updates-title">
+                <h2 id="updates-title"><span>10</span>协议更新与联系</h2>
+                <p>本协议可能随功能或法律要求变化而更新。涉及用户重要权益的变更，应通过适当方式提示；依法需要重新取得同意的，应在相应业务流程中处理。</p><p>对服务条款、费用或账户处理有疑问，可通过 <a href="mailto:hello@qxapi.com">hello@qxapi.com</a> 联系服务支持。请说明问题并提供必要信息，避免发送密码、完整密钥或无关个人资料。</p>
+            </section>
+            <a class="legal-next" href="privacy.html"><span>继续阅读</span>隐私政策 →</a>
+        </article>
+    </main>
+    <footer class="footer legal-footer">
+        <div class="wrap"><span>© 2026 QxAPI</span><nav aria-label="页脚导航"><a href="index.html">首页</a><a href="docs.html">文档</a><a href="terms.html" aria-current="page">用户协议</a><a href="privacy.html">隐私政策</a></nav></div>
+    </footer>
+</body>
+</html>
