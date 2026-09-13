@@ -1,0 +1,14 @@
+# Local configuration and generated files
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+/new-api/data/
+/new-api/logs/
+/new-api/web/dist/
+/new-api/electron/dist/
